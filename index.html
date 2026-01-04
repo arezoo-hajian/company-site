@@ -1,181 +1,65 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>شرکت نمونه</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Tahoma, sans-serif;
-            background-color: #f4f4f4;
-            line-height: 1.8;
-        }
-
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 12px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        section {
-            background: white;
-            margin: 20px;
-            padding: 30px;
-            border-radius: 8px;
-        }
-
-        h2 {
-            color: #2c3e50;
-        }
-
-        .products, .team {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            background-color: #ecf0f1;
-            padding: 20px;
-            width: 220px;
-            border-radius: 8px;
-            text-align: center;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            background-color: #dcdde1;
-            transform: scale(1.05);
-        }
-
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-
-        /* Modal */
-        #modal {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.6);
-        }
-
-        .modal-content {
-            background: white;
-            width: 320px;
-            margin: 120px auto;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .close-btn {
-            margin-top: 15px;
-            padding: 8px 15px;
-            border: none;
-            background: #2c3e50;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>شرکت فناوری آرزو</title>
+<style>
+body { font-family: Tahoma; margin:0; background:#f4f4f4 }
+header { background:#1f2a44; color:white; padding:20px; text-align:center }
+section { background:white; margin:20px; padding:30px; border-radius:8px }
+.cards { display:flex; gap:20px; flex-wrap:wrap }
+.card {
+  width:240px; background:#eef1f5;
+  padding:20px; border-radius:8px; text-align:center;
+}
+.card a { text-decoration:none; color:#1f2a44; font-weight:bold }
+</style>
 </head>
 <body>
 
 <header>
-    <h1>شرکت نمونه</h1>
-    <nav>
-        <a href="#about">درباره ما</a>
-        <a href="#products">محصولات</a>
-        <a href="#team">اعضای تیم</a>
-    </nav>
+<h1>شرکت فناوری آرزو</h1>
 </header>
 
-<section id="about">
-    <h2>درباره شرکت</h2>
-    <p>
-        شرکت نمونه در زمینه طراحی و توسعه نرم‌افزار فعالیت می‌کند
-        و هدف ما ارائه محصولات با کیفیت و تیم حرفه‌ای است.
-    </p>
-</section>
-
-<section id="products">
-    <h2>محصولات</h2>
-    <div class="products">
-        <div class="card" onclick="showInfo('محصول ۱', 'سیستم مدیریت پروژه با امکانات کامل')">
-            <h3>محصول ۱</h3>
-            <p>مدیریت پروژه</p>
-        </div>
-
-        <div class="card" onclick="showInfo('محصول ۲', 'نرم‌افزار حسابداری ویژه شرکت‌ها')">
-            <h3>محصول ۲</h3>
-            <p>حسابداری</p>
-        </div>
-
-        <div class="card" onclick="showInfo('محصول ۳', 'پلتفرم فروش آنلاین و مدیریت سفارش')">
-            <h3>محصول ۳</h3>
-            <p>فروش آنلاین</p>
-        </div>
-    </div>
-</section>
-
-<section id="team">
-    <h2>اعضای تیم</h2>
-    <div class="team">
-        <div class="card" onclick="showInfo('آرزو حاجیان', 'مدیرعامل با بیش از ۱۰ سال تجربه')">
-            <h3>آرزو حاجیان</h3>
-            <p>مدیرعامل</p>
-        </div>
-
-        <div class="card" onclick="showInfo('سارا محمدی', 'توسعه‌دهنده Front-End')">
-            <h3>سارا محمدی</h3>
-            <p>Front-End Developer</p>
-        </div>
-
-        <div class="card" onclick="showInfo('مهدی حسینی', 'طراح UI / UX')">
-            <h3>مهدی حسینی</h3>
-            <p>UI / UX Designer</p>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <p>© 2026 - تمامی حقوق متعلق به شرکت نمونه است</p>
-</footer>
-
-<div id="modal">
-    <div class="modal-content">
-        <h3 id="modalTitle"></h3>
-        <p id="modalText"></p>
-        <button class="close-btn" onclick="closeModal()">بستن</button>
-    </div>
+<section>
+<h2>محصولات</h2>
+<div class="cards">
+<div class="card">
+<a href="products/project-management.html">سامانه مدیریت پروژه آریا</a>
+<p>مدیریت پروژه</p>
 </div>
+<div class="card">
+<a href="products/online-shop.html">فروشگاه اینترنتی نوین</a>
+<p>فروش آنلاین</p>
+</div>
+<div class="card">
+<a href="products/accounting.html">سیستم حسابداری پارس</a>
+<p>مدیریت مالی</p>
+</div>
+</div>
+</section>
 
-<script>
-    function showInfo(title, text) {
-        document.getElementById("modalTitle").innerText = title;
-        document.getElementById("modalText").innerText = text;
-        document.getElementById("modal").style.display = "block";
-    }
-
-    function closeModal() {
-        document.getElementById("modal").style.display = "none";
-    }
-</script>
+<section>
+<h2>اعضای تیم</h2>
+<div class="cards">
+<div class="card">
+<a href="team/arezo-hajian.html">آرزو حاجیان</a>
+<p>مدیرعامل</p>
+</div>
+<div class="card">
+<a href="team/sara-mohammadi.html">سارا محمدی</a>
+<p>Front-End Developer</p>
+</div>
+<div class="card">
+<a href="team/mehdi-hosseini.html">مهدی حسینی</a>
+<p>UI / UX Designer</p>
+</div>
+</div>
+</section>
 
 </body>
 </html>
+
+
+
 
