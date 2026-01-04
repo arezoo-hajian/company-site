@@ -1,64 +1,166 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<title>شرکت فناوری آرزو</title>
-<style>
-body { font-family: Tahoma; margin:0; background:#f4f4f4 }
-header { background:#1f2a44; color:white; padding:20px; text-align:center }
-section { background:white; margin:20px; padding:30px; border-radius:8px }
-.cards { display:flex; gap:20px; flex-wrap:wrap }
-.card {
-  width:240px; background:#eef1f5;
-  padding:20px; border-radius:8px; text-align:center;
-}
-.card a { text-decoration:none; color:#1f2a44; font-weight:bold }
-</style>
+    <meta charset="UTF-8">
+    <title>شرکت فناوری آرزو</title>
+
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            line-height: 1.9;
+        }
+
+        header {
+            background-color: #1f2a44;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            background: white;
+            margin: 20px;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #1f2a44;
+            margin-top: 0;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 240px;
+            background: #eef1f5;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #1f2a44;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background-color: #1f2a44;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-<h1>شرکت فناوری آرزو</h1>
+    <h1>شرکت فناوری آرزو</h1>
+    <nav>
+        <a href="#about">معرفی شرکت</a>
+        <a href="#products">محصولات</a>
+        <a href="#team">اعضای تیم</a>
+    </nav>
 </header>
 
-<section>
-<h2>محصولات</h2>
-<div class="cards">
-<div class="card">
-<a href="products/project-management.html">سامانه مدیریت پروژه آریا</a>
-<p>مدیریت پروژه</p>
-</div>
-<div class="card">
-<a href="products/online-shop.html">فروشگاه اینترنتی نوین</a>
-<p>فروش آنلاین</p>
-</div>
-<div class="card">
-<a href="products/accounting.html">سیستم حسابداری پارس</a>
-<p>مدیریت مالی</p>
-</div>
-</div>
+<!-- معرفی شرکت -->
+<section id="about">
+    <h2>معرفی شرکت</h2>
+    <p>
+        شرکت فناوری آرزو با هدف طراحی و توسعه نرم‌افزارهای کاربردی
+        و راهکارهای دیجیتال تأسیس شده است.
+        این شرکت در زمینه تولید سیستم‌های تحت وب،
+        فروشگاه‌های اینترنتی و نرم‌افزارهای سازمانی فعالیت می‌کند.
+    </p>
+
+    <p>
+        تمرکز اصلی ما بر کیفیت، امنیت و تجربه کاربری است.
+        تیم شرکت متشکل از افراد متخصص در حوزه برنامه‌نویسی،
+        طراحی رابط کاربری و مدیریت پروژه می‌باشد
+        و تلاش می‌کند با ارائه محصولات نوآورانه،
+        نیازهای کسب‌وکارهای مختلف را برطرف کند.
+    </p>
 </section>
 
-<section>
-<h2>اعضای تیم</h2>
-<div class="cards">
-<div class="card">
-<a href="team/arezo-hajian.html">آرزو حاجیان</a>
-<p>مدیرعامل</p>
-</div>
-<div class="card">
-<a href="team/sara-mohammadi.html">سارا محمدی</a>
-<p>Front-End Developer</p>
-</div>
-<div class="card">
-<a href="team/mehdi-hosseini.html">مهدی حسینی</a>
-<p>UI / UX Designer</p>
-</div>
-</div>
+<!-- محصولات -->
+<section id="products">
+    <h2>محصولات</h2>
+
+    <div class="cards">
+        <div class="card">
+            <a href="products/project-management.html">
+                سامانه مدیریت پروژه آریا
+            </a>
+            <p>مدیریت پروژه و تیم‌ها</p>
+        </div>
+
+        <div class="card">
+            <a href="products/online-shop.html">
+                فروشگاه اینترنتی نوین
+            </a>
+            <p>راه‌اندازی فروش آنلاین</p>
+        </div>
+
+        <div class="card">
+            <a href="products/accounting.html">
+                سیستم حسابداری پارس
+            </a>
+            <p>مدیریت مالی شرکت</p>
+        </div>
+    </div>
 </section>
+
+<!-- اعضای تیم -->
+<section id="team">
+    <h2>اعضای تیم</h2>
+
+    <div class="cards">
+        <div class="card">
+            <a href="team/arezo-hajian.html">
+                آرزو حاجیان
+            </a>
+            <p>مدیرعامل و بنیان‌گذار</p>
+        </div>
+
+        <div class="card">
+            <a href="team/sara-mohammadi.html">
+                سارا محمدی
+            </a>
+            <p>Front-End Developer</p>
+        </div>
+
+        <div class="card">
+            <a href="team/mehdi-hosseini.html">
+                مهدی حسینی
+            </a>
+            <p>UI / UX Designer</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 - شرکت فناوری آرزو</p>
+</footer>
 
 </body>
 </html>
+
 
 
 
