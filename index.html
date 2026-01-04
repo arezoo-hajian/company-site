@@ -2,161 +2,90 @@
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>شرکت فناوری آرزو</title>
-
-    <style>
-        body {
-            font-family: Tahoma, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-            line-height: 1.9;
-        }
-
-        header {
-            background-color: #1f2a44;
-            color: white;
-            padding: 25px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        section {
-            background: white;
-            margin: 20px;
-            padding: 30px;
-            border-radius: 8px;
-        }
-
-        h2 {
-            color: #1f2a44;
-            margin-top: 0;
-        }
-
-        .cards {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            width: 240px;
-            background: #eef1f5;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .card a {
-            text-decoration: none;
-            color: #1f2a44;
-            font-weight: bold;
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        footer {
-            background-color: #1f2a44;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سایت شرکت | صفحه اصلی</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>شرکت فناوری آرزو</h1>
-    <nav>
-        <a href="#about">معرفی شرکت</a>
-        <a href="#products">محصولات</a>
-        <a href="#team">اعضای تیم</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1">شرکت آرزو</span>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">خانه</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">تماس با ما</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-</header>
 
-<!-- معرفی شرکت -->
-<section id="about">
-    <h2>معرفی شرکت</h2>
-    <p>
-        شرکت فناوری آرزو با هدف طراحی و توسعه نرم‌افزارهای کاربردی
-        و راهکارهای دیجیتال تأسیس شده است.
-        این شرکت در زمینه تولید سیستم‌های تحت وب،
-        فروشگاه‌های اینترنتی و نرم‌افزارهای سازمانی فعالیت می‌کند.
-    </p>
-
-    <p>
-        تمرکز اصلی ما بر کیفیت، امنیت و تجربه کاربری است.
-        تیم شرکت متشکل از افراد متخصص در حوزه برنامه‌نویسی،
-        طراحی رابط کاربری و مدیریت پروژه می‌باشد
-        و تلاش می‌کند با ارائه محصولات نوآورانه،
-        نیازهای کسب‌وکارهای مختلف را برطرف کند.
-    </p>
-</section>
-
-<!-- محصولات -->
-<section id="products">
-    <h2>محصولات</h2>
-
-    <div class="cards">
-        <div class="card">
-            <a href="products/project-management.html">
-                سامانه مدیریت پروژه آریا
-            </a>
-            <p>مدیریت پروژه و تیم‌ها</p>
+    <header class="bg-light py-5 border-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 text-center">
+                    <h1 class="fw-bold">به شرکت ما خوش آمدید</h1>
+                    <p class="lead mb-4">ما تیمی متشکل از متخصصین با تجربه هستیم که از سال ۱۴۰۰ فعالیت خود را در زمینه ارائه راهکارهای نوین کسب‌وکار آغاز کرده‌ایم. هدف ما رشد و ارتقای سطح کیفی خدمات به مشتریان عزیزمان در سراسر کشور است.</p>
+                </div>
+            </div>
         </div>
+    </header>
 
-        <div class="card">
-            <a href="products/online-shop.html">
-                فروشگاه اینترنتی نوین
-            </a>
-            <p>راه‌اندازی فروش آنلاین</p>
+    <section class="container my-5">
+        <h2 class="text-center mb-4">خدمات و محصولات</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">حسابداری</h5>
+                        <p class="card-text">مدیریت دقیق امور مالی و مالیاتی شما.</p>
+                        <a href="products/accounting.html" class="btn btn-primary">ورود به بخش</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">فروشگاه آنلاین</h5>
+                        <p class="card-text">راه اندازی صفر تا صد فروشگاه مجازی.</p>
+                        <a href="products/online-shop.html" class="btn btn-primary">ورود به بخش</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">مدیریت پروژه</h5>
+                        <p class="card-text">نظم‌دهی به فعالیت‌ها و تیم‌ها.</p>
+                        <a href="products/project-management.html" class="btn btn-primary">ورود به بخش</a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <a href="products/accounting.html">
-                سیستم حسابداری پارس
-            </a>
-            <p>مدیریت مالی شرکت</p>
+    <section class="container my-5 py-4 bg-light rounded">
+        <h2 class="text-center mb-4">تیم ما</h2>
+        <div class="row text-center g-4">
+            <div class="col-md-4">
+                <h5>آرزو حاجیان</h5>
+                <a href="team/arezo-hajian.html" class="btn btn-sm btn-outline-dark">مشاهده رزومه</a>
+            </div>
+            <div class="col-md-4">
+                <h5>مهدی حسینی</h5>
+                <a href="team/mehdi-hosseini.html" class="btn btn-sm btn-outline-dark">مشاهده رزومه</a>
+            </div>
+            <div class="col-md-4">
+                <h5>سارا محمدی</h5>
+                <a href="team/sara-mohammadi.html" class="btn btn-sm btn-outline-dark">مشاهده رزومه</a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- اعضای تیم -->
-<section id="team">
-    <h2>اعضای تیم</h2>
-
-    <div class="cards">
-        <div class="card">
-            <a href="team/arezo-hajian.html">
-                آرزو حاجیان
-            </a>
-            <p>مدیرعامل و بنیان‌گذار</p>
-        </div>
-
-        <div class="card">
-            <a href="team/sara-mohammadi.html">
-                سارا محمدی
-            </a>
-            <p>Front-End Developer</p>
-        </div>
-
-        <div class="card">
-            <a href="team/mehdi-hosseini.html">
-                مهدی حسینی
-            </a>
-            <p>UI / UX Designer</p>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <p>© 2026 - شرکت فناوری آرزو</p>
-</footer>
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">© 2026 کلیه حقوق برای [نام شرکت شما] محفوظ است.</p>
+    </footer>
 
 </body>
 </html>
